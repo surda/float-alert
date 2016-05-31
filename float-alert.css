@@ -1,0 +1,68 @@
+/*!
+ * Floating alerts
+ */
+
+.float-alerts {
+    word-break: break-word;
+    color: #fff;
+    bottom: 50px;
+    left: 25px;
+    opacity: 1;
+    position: fixed;
+    visibility: visible;
+    z-index: 2001;
+}
+.float-alerts .alert {
+    max-width: 600px;
+    min-width: 350px;
+    word-break: break-word;
+}
+.float-alerts .alert:last-child {
+    margin-bottom: 0;
+}
+.float-alerts .alert-dark,
+.float-alerts .alert.dark {
+    color: #FFF;
+    background-color: #323232;
+    border-color: #323232;
+}
+.float-alerts .alert-success.dark {
+    background-color: #468847;
+    border-color: #468847;
+}
+.float-alerts .alert-info.dark {
+    background-color: #286090;
+    border-color: #286090;
+}
+.float-alerts .alert-warning.dark {
+    background-color: #ec971f;
+    border-color: #ec971f;
+}
+.float-alerts .alert-danger.dark {
+    background-color: #b94a48;
+    border-color: #b94a48;
+}
+.float-alerts .alert-dark button.close,
+.float-alerts .alert.dark button.close {
+    opacity: 0.5;
+    color: #FFF;
+    text-shadow: none;
+}
+.float-alerts .alert-dark button.close:hover,
+.float-alerts .alert.dark button.close:hover {
+    opacity: 1;
+    color: #FFF;
+}
+.float-alerts .alert[class*="dark"] .back-link {
+    color: #c6dafc;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-left: 18px;
+    max-width: 100px;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
